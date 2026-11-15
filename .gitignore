@@ -1,0 +1,22 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables & secrets (절대 커밋 금지)
+.env
+.env.local
+
+# Logs & temporary files
+batch_log.txt
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db

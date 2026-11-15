@@ -1,0 +1,3 @@
+"""
+Display Foresight - Collectors Package
+"""

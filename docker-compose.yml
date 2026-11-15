@@ -1,0 +1,15 @@
+services:
+  display-foresight:
+    build: .
+    container_name: display-foresight
+    ports:
+      - "8501:8501"
+    environment:
+      - TZ=Asia/Seoul
+    env_file:
+      - .env
+    volumes:
+      - ./display_foresight.db:/app/display_foresight.db
+      - ./batch_log.txt:/app/batch_log.txt
+      - ./.env:/app/.env
+    restart: unless-stopped

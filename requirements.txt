@@ -1,0 +1,25 @@
+# ============================================================================
+# Display Foresight - Python Dependencies (requirements.txt)
+# ============================================================================
+
+# Core & Environment
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# [Phase 2-2] News RSS Collection & Surgical Clean-Text Extraction
+feedparser>=6.0.11
+newspaper3k>=0.2.8
+lxml_html_clean>=0.1.1
+readability-lxml>=0.8.1
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# [Phase 3-1] LLM Dynamic Keyword Extraction & Deep Analysis
+openai>=1.30.0
+
+# [Phase 4] Zero-Latency Streamlit Dashboard & Excel Reporting
+streamlit>=1.32.0
+pandas>=2.2.0
+openpyxl>=3.1.2
+plotly>=5.20.0
+altair>=5.3.0
