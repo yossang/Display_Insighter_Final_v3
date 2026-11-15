@@ -20,3 +20,7 @@ batch_log.txt
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Packages & local backups
+*.zip
+_backup_*/

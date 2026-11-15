@@ -367,6 +367,25 @@ B2B_LIGHT_THEME_CSS = """
         background-color: #1E293B !important;
         border-color: #1E293B !important;
     }
+    /* [FIX] Streamlit 아이콘(Material Symbols)이 위 font-family 강제 지정에 덮여 'arrow_down' 등 글자로 노출되는 문제 복원 */
+    html body [data-testid="stIconMaterial"],
+    html body [data-testid="stExpander"] summary span[data-testid="stIconMaterial"],
+    html body [data-testid="stSidebar"] [data-testid="stIconMaterial"],
+    html body [data-testid="stExpanderIcon"],
+    html body span[class*="material-symbols"],
+    html body span[class*="material-icons"] {
+        font-family: "Material Symbols Rounded", "Material Symbols Outlined", "Material Icons" !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        letter-spacing: normal !important;
+        text-transform: none !important;
+        white-space: nowrap !important;
+        word-wrap: normal !important;
+        direction: ltr !important;
+        font-feature-settings: "liga" !important;
+        -webkit-font-feature-settings: "liga" !important;
+        -webkit-font-smoothing: antialiased;
+    }
 </style>
 """
 st.markdown(B2B_LIGHT_THEME_CSS, unsafe_allow_html=True)
